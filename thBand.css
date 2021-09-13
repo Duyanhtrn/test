@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.topBar_Menu{
+    display: flex;
+    
+}
+
+.topBar_Menu div{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.topBar_Menu div:hover{
+    background-color: #ccc;
+    color: black;
+    
+}
+
+.topBar_Drop{
+    position: relative;
+}
+
+.topBar_SubMenu{
+    position: absolute;
+    list-style: none;
+    background: white;
+    color: black;
+    bottom: -15px;
+    left: 0;
+    transform: translateY(100%);
+    display: none;
+    padding: 0px;
+    width: 160px;
+
+}
+
+.topBar_SubMenu li{
+    padding: 8px 16px;
+}
+
+.topBar_SubMenu li:hover{
+    background: #ccc;
+}
+
+
+.topBar_Drop:hover .topBar_SubMenu{
+    display: block;
+}
+
+.topBar_search{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.topBar_search:hover{
+    background: red;
+}
+
+.mobile.fa-bars{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+
+.slide-group{
+    position: relative;
+}
+
+.slide_text{
+    position: absolute;
+    color: white;
+    left: 50%;
+    bottom: 0px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.slide_text p{
+    font-weight: bolder;
+}
+
+.slide_text h3{
+    font-size: 24px;
+    margin: 10px;
+    font-weight: 400;
+}
+.content_theBand{
+    padding: 64px 16px;
+}
+.content_text{
+    max-width: 800px;
+    margin: 0 auto  ;
+}
+
+.content_center{
+    text-align: center;
+}
+
+.content_text h1{
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    font-size: 30px;
+    
+}
+
+.content_text p{
+    margin: 15px 0px;
+}
+
+.content_justify{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.content_triple{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 32px 0px;
+    
+}
+
+.content_name{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.content_img{
+    display: flex;
+    justify-content: center;
+}
+
+.content_img img{
+    border-radius: 5px;
+}
+
+.blackPart{
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+    
+}
+
+.blackPart h2{
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.blackPart_opacity{
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+.blackPart_center{
+    text-align: center;
+}
+
+.blackPart_border{
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: white;
+    color: #757575;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    
+}
+
+.blackPart_border li{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.Sold_out{
+    background-color: red;
+    color: white;
+    margin: 0 0 0 16px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.circle{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    right: 0;
+    position: absolute;
+    margin-right: 32px;
+    
+}
+
+.blackPart_cards{
+    padding: 32px 0px;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card-body{
+    color: black;
+    padding: 0 16px !important;
+}
+
+.card-text{
+   color: black;
+}
+
+.btn-primary.btn{
+    border-radius: 0;
+    background-color: black;
+    color: white;    
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.btn-primary.btn:hover{
+    color: #000!important;
+    background-color: #ccc;
+}
+
+.card-title{
+    padding: 15px 0px;
+}
+
+.card{
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.contact{
+    padding:64px 16px;
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+
+.contact h2     {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.contact p{
+    text-align: center;
+    opacity: 0.6;
+    
+}
+
+.contact_detail{
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_address{
+    font-size: 18px;
+}
+
+.contact_row{
+    margin: 0 -16px 8px -16px;
+    padding: 0px 8px;
+    display: flex;
+
+}
+
+.input_half{
+    padding: 0px 8px;
+    width: 49.99999%
+}
+
+.input_padding{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+.contact_message{
+    width: 49.99999%
+}
+
+.input_but{
+    background-color: black;
+    color:white;
+    padding: 8px 16px;
+    margin: 16px 0px;
+    float: right;
+    border: none;
+}
+
+.input_but:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.location_map{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.card-img-top:hover{
+    opacity: 0.6 !important;
+   
+}
+
+
+@media screen and (max-width:600px){
+    .desktop{
+        display: none !important;
+    }
+    .mobile.fa-bars{
+        display: block;
+    }
+    .fas{
+        display: none;
+    }
+    .fa-search{
+        display: none;
+    }
+    .content_triple{
+        flex-direction: column;
+    }
+    .content_item{
+        margin-bottom: 12px;
+    }
+    .blackPart_cards{
+        flex-direction: column;
+        margin: 0 16px;
+        
+    }
+    .card{
+        width: 100% !important;
+        margin-bottom: 16px;
+        
+    }
+    .card-img-top{
+        border-radius: none !important;
+    }
+    .contact_detail{
+        flex-direction: column;
+    }
+
+    .contact_address{
+        margin-bottom: 16px;
+        
+    }
+
+    .contact_message{
+        width: 100%;
+    }
+    .contact_row{
+        flex-direction: column;
+    }
+    
+    .input_half{
+        width: 100%;
+    }
+}
+
